@@ -108,7 +108,7 @@ ul {
 }
 
 li {
-
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -126,6 +126,32 @@ li span {
   top: 60px;
 }
 
+.complete-title {
+  animation: complete 4s infinite;
+}
+
+@keyframes  complete {
+  0%  {
+     color: rgb(234, 10, 10);
+  }
+
+  25% {
+    color: rgb(222, 240, 14);
+  }
+
+  50% {
+    color: rgb(21, 234, 10);
+    transform: scale(1.5);
+  }
+
+  75% {
+    color: rgb(10, 36, 234);
+
+  }
+  100% {
+    color: rgb(186, 10, 234);
+  }
+}
 
 @media screen and (max-width: 600px) {
   .video-background {
